@@ -1,0 +1,7 @@
+@charset "ISO-8859-1";
+.con_opacity2 {
+  position: relative;
+    background: rgba(0, 0, 0, 0.6);
+border: 1px solid black;
+
+}

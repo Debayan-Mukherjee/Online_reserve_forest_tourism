@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+  <div class="jumbotron jumbotron-fluid con_opacity3">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2">
+        </div>
+        <div class="col-xl-7">
+          <h1 class="hero shadow1" style="color:#cc0000">Welcome to Nandankanan reserve forest </h1>
+        </div>
+        <div class="col-xl-1">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">
+            Login
+          </button>
+        </div>
+        <div class="col-xl-1">
+          <form name="test" action="sessionServlet4" method="get">
+            <input type="submit" class="btn btn-primary" id="logout" value="logout" name="b2" ">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="login-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Login here</h4>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <form action="sessionServlet1" method="get">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-sm body  con_opacity2 sticky-top">
+
+    <img src="images/logo.jpg" style="height: 55px" alt="  " >
+    
+    <a class="navbar-brand" href="#"></a>
+
+
+    <ul class="navbar-nav ">
+
+
+      <li class="nav-item">
+        <a class="nav-link yu" style="color:#ff9900" href="home.html">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+
+        <a class="nav-link dropdown-toggle yu" style="color:#ff9900" href="#" id="navbardrop" data-toggle="dropdown">
+          About Us
+        </a>
+        <div class="dropdown-menu ">
+          <a class="dropdown-item " style="color:green" href="nandankanan_history.html">History</a>
+          <a class="dropdown-item " style="color:green" href="nandankanan_mission.html">Mission</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+
+        <a class="nav-link dropdown-toggle yu" style="color:#ff9900" href="#" id="navbardrop" data-toggle="dropdown">
+          Animals
+        </a>
+        <div class="dropdown-menu ">
+        <form action="newArrival" method="get">
+           <a class="dropdown-item " style="color:green" href="newArrival">New Arrival</a>
+        </form>
+         <form action="newBorn" method="get"> 
+          <a class="dropdown-item " style="color:green" href="newBorn">New Born</a>
+         </form> 
+          <form action="feeding_time" method="get">
+          <a class="dropdown-item " style="color:green" href="feeding_time">Feeding time</a>
+          </form>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+
+        <a class="nav-link dropdown-toggle yu" style="color:#ff9900" href="#" id="navbardrop" data-toggle="dropdown">
+          Conservation
+        </a>
+        <div class="dropdown-menu ">
+          <a class="dropdown-item " style="color:green" href="nandankanan_gharial_breeding.html">nandankanan gharial breeding.html</a>
+
+        </div>
+      </li>
+
+    </ul>
+
+    
+      <a class="navbar-brand" style="color:#ff9900" href="nandankanan_booking.html">
+        <img src="images2/ticket.png" alt="logo" style="width:70%;">
+      </a>
+ 
+ <form action = "cancleservlet2" method="get">
+      <a class="navbar-brand" style="color:#ff9900" href="cancleservlet2">
+        <img src="images2/ticket_calcle.png" alt="logo" style="width:100px;height:50px">
+      </a>
+</form>
+  </nav>
+
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/banner_1513172978.jpg" style="height:50%" alt="Los Angeles">
+
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner_1513173129.jpg" style="height:50%" alt="Chicago">
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner_1513173089.jpg" style="height:50%" alt="New York">
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner_1513173042.jpg" style="height:50%" alt="New York">
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner_1513173267.jpg" alt="New York">
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner_1513173327.jpg" alt="New York">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+
+  <div class="  con_opacity1" style="margin-top:20px ; padding:30px">
+    <div style="text-align:center">
+      <h1 style="color:#ff9900;font-family: 'cursive' ">Unique facility</h1>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 text-center">
+        <div class="card" style="width:22rem">
+          <img src="images2/ropeway.jpg" alt="" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-xl-4 text-center">
+        <div class="card" style="width:22rem">
+          <img src="images2/toy-train.jpg" alt="" class="card-img-top">
+        </div>
+      </div>
+      <div class="col-xl-4 text-center">
+        <div class="card" style="width:22rem">
+          <img src="images2/bov.jpg" alt="" class="card-img-top">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid body con_opacity" style="margin-top:20px ; padding:30px">
+    <div class="row">
+      <div class="col-xl-3 text-center ">
+        <div class="card cd" style="width: 18rem ">
+          <img src="images/1.jpg" alt="" class="card-img-top ">
+          <div class="overlay">
+            <button type="button" class="btn btn-danger np">
+              More Details
+            </button>
+          </div>
+          <div class="card-block">
+            <h1 style="font-size:20px;">Tiger Safari</h1>
+            <p> Nandankanan is the first zoo in India with a white tiger safari</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 text-center ">
+        <div class="card cd" style="width: 18rem ">
+          <img src="images/2.jpg" alt="" class="card-img-top">
+          <div class="overlay">
+            <button type="button" class="btn btn-danger np">
+              More Details
+            </button>
+          </div>
+          <div class="card-block">
+            <h1 style="font-size:20px;">Lion Safari</h1>
+            <p> Special protected vehicle takes the visitors straight into the pride of lion .</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 text-center ">
+        <div class="card cd" style="width: 18rem">
+          <img src="images/3.jpg" alt="" class="card-img-top">
+          <div class="overlay">
+            <button type="button" class="btn btn-danger np">
+              More Details
+            </button>
+          </div>
+          <div class="card-block">
+            <h1 style="font-size:20px;">Bear Safari</h1>
+            <p> Visitors can avail opertunity to slight sloth bears in their natural habitat.<p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 text-center ">
+        <div class="card cd" style="width: 18rem">
+          <img src="images/3-1.jpg" alt="" class="card-img-top ">
+          <div class="overlay">
+            <button type="button" class="btn btn-danger np">
+              More Details
+            </button>
+          </div>
+          <div class="card-block">
+            <h1 style="font-size:20px;">Herbivore Safari</h1>
+            <p>Barking deer, Spotted Deer, Sambars and Peafowls etc.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  
+
+    <!-- The Modal -->
+
+
+
+    <div class=" con_opacity2" id="section1" style="margin-bottom:30px">
+      <div class="row">
+        <div class=col-xl-4>
+          <h1 class="hero1 shadow1">CALL: <br> +918942904580</h1>
+        </div>
+        <div class=col-xl-4>
+          <h1 class="hero1 shadow1">MAIL:<br>online@tourism.in</h1>
+        </div>
+        <div class=col-xl-4>
+          <h1 class="hero1 shadow1">SOCIAL ACCOUNTS:<br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> </script>
+
+
+
+</body>
+
+
+
+
+</html>
